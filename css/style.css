@@ -57,7 +57,6 @@ ul {
 
 .resume {
   display: flex;
-  min-width: 520px;
   padding: 50px;
   border: 8px solid #eee;
   border-radius: 20px;
@@ -67,7 +66,6 @@ ul {
 }
 .resume .left {
   flex: 1;
-  min-width: 360px;
   padding-right: 50px;
   border-right: 1px solid #fa0;
 }
@@ -137,7 +135,6 @@ ul {
 .resume .right {
   display: inline-block;
   flex: 2;
-  min-width: 360px;
   padding-left: 50px;
 }
 .resume .right .experiences, .resume .right .projects {
@@ -272,7 +269,7 @@ ul {
   right: 0;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 950px) {
   body {
     padding: 40px;
   }
@@ -311,7 +308,7 @@ ul {
   }
   .resume .left .tool {
     margin-right: 0;
-    width: 200px;
+    width: 190px;
   }
   .resume .left .tool ul.items {
     display: flex;
@@ -327,36 +324,31 @@ ul {
     content: "/";
   }
 }
-@media screen and (max-width: 997px) {
-  .resume .left .tool {
-    width: initial;
+@media screen and (max-width: 585px) {
+  .resume .left .skill {
+    margin-right: 0;
   }
 }
-@media screen and (max-width: 789px) {
-  .resume .left .tool {
-    width: 50%;
+@media screen and (max-width: 400px) {
+  .resume {
+    border: none;
   }
 }
-@media screen and (max-width: 634px) {
-  .resume .left .tool {
-    width: initial;
-  }
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
   .resume .contact {
-    padding: 10px 140px 10px 40px;
+    padding: 10px 110px 10px 10px;
   }
   .resume .photo {
-    width: 150px;
-    height: 150px;
-    right: -30px;
-    top: -30px;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top: 0;
   }
   .resume .photo a {
     display: none;
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 750px) {
   .resume .left .myName {
     margin-top: 100px;
   }

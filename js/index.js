@@ -195,7 +195,17 @@ var ResumeData = {
       ]
     },
     {
-      Year: 2019
+      Year: 2019, 
+      // Events: [
+      //   {
+      //     Description: "Trainee",
+      //     Detail: "A training of \"Unit Testing Effectively with Legacy Code\" established by Joey Chen @ Odd-e.", 
+      //     Organization: "Joey Chen @ Odd-e", 
+      //     Link: "https://dotblogs.com.tw/hatelove/1", 
+      //     Location: "Taiwan", 
+      //     Display: true
+      //   }, 
+      // ]
     }, 
   ], 
   Projects: [
