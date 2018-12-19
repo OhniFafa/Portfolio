@@ -248,7 +248,7 @@ ul {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url("https://lh5.googleusercontent.com/scyYLTCb6ZyxQjLT_QIMNGXP7ZTfKX0pjzElJXW8O5vjAQvFWWN8rxB-R6SIkrqextlbnL11BjFwnw=w1920-h904-rw");
+  background-image: url("https://i.imgur.com/a1Nvwx7.jpg");
   background-size: cover;
   border: 5px solid #eee;
   position: absolute;
@@ -332,6 +332,9 @@ ul {
 @media screen and (max-width: 400px) {
   .resume {
     border: none;
+  }
+  .resume .contact {
+    border-radius: 20px;
   }
 }
 @media screen and (max-width: 1150px) {
