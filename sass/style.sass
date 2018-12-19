@@ -52,7 +52,7 @@ h3
   
 ul
   padding: 0
-  list-style: none
+  list-style: none  
   
 .resume
   display: flex
@@ -91,10 +91,10 @@ ul
       li
         justify-content: space-between
       .name
-        flex: 175px
+        flex: 120px
         flex-shrink: 0
       .bar
-        flex: 120px
+        flex: 175px
         flex-grow: 0
         flex-shrink: 0
         height: 20px
@@ -258,7 +258,7 @@ ul
         vertical-align: top
         margin-right: 40px
       .lang
-        max-width: 350px
+        max-width: 370px
         min-width: 295px
         .name
           flex-grow: 0
@@ -279,16 +279,21 @@ ul
             &::after
               content: "/"
           
-@media screen and (max-width: 938px)
+@media screen and (max-width: 997px)
   .resume
     .left
       .tool
         width: initial
-@media screen and (max-width: 730px)
+@media screen and (max-width: 789px)
   .resume
     .left
       .tool
-        width: 300px
+        width: 50%
+@media screen and (max-width: 634px)
+  .resume
+    .left
+      .tool
+        width: initial
 
 @media screen and (max-width: 1200px)
   .resume
@@ -306,3 +311,8 @@ ul
     .left
       .myName
         margin-top: 100px
+    // .right
+    //   .timePoints
+    //     .events
+    //       .event .hideBtn, .collapsed
+    //         display: none

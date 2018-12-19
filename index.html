@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Leon Tsai</title>
-  
+<meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -89,7 +89,7 @@
             <h5 class="timePoint">{{project.Year}}</h5>
             <ul class="events">
               <li class="event" v-for="(proj, index) in project.Events"> 
-                <h4 class="desc">{{proj.Description}}</h4>
+                <h4 class="desc"> <a :href="proj.Link" target="_blank">{{proj.Description}}</a></h4>
                 <ul class="roles">
                   <li class="role" v-for="role in proj.Roles">{{role}}</li>
                 </ul>
@@ -110,8 +110,7 @@
         <li>LinkedIn: <a :href="LinkedInUrl" target="_blank">Ohni-Tsai</a></li>
       </ul>
     </div>
-    <div class="photo"><a class="more btn btn-primary" href="https://www.google.com" target="_blank">More</a></div>
-    <div class="corner">more</div>
+    <div class="photo"></div>
   </div>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>

@@ -1,22 +1,22 @@
 var ResumeData = {
-  Name: "Ohni Tsai", 
+  Name: "Leon Tsai", 
   Title: "Software Engineer", 
-  Summary: "I possess experience with full stack web developement. <br>As a programmer, I enjoy solving problems and creating new things by coding. At the same time, I devote myself to coding cleanly. <br>The following are my faiths: <br>\"Do things interesting or useful.\" - In leisure time, I love learning new things out of interest or usefulness.<br>\"More sensible partner, much easier communication.\" - In company, I usally shared knowledge and mentored freshmen. <br>\"Do right things, then do things right. And ensure the 'right' is right.\" -  So, I become a novice of Test-Driven-Development recently.", 
+  Summary: "I possess experience with full stack web developement. <br>As a programmer, I enjoy solving problems and building new things by coding. At the same time, I devote myself to coding cleanly. <br>My faiths are following: <ul><li>\"Do things interesting or useful.\" - In leisure time, I love learning new things out of interest or their usefulness.</li><li>\"Partners get more sensible, communication gets easier.\" - In company, I am delighted to shared knowledge and mentored freshmen. </li><li>\"Do right things. Make things right. Ensure the 'right' is right.\" -  So, I become a novice of Test-Driven-Development recently.</li></ul>", 
   Email: "leontsai218@outlook.com", 
   LinkedInUrl: "https://www.google.com", 
   Skills: {
     Languages: {
-      Title: "Program Languages", 
+      Title: "Programming Languages", 
       Topic: "lang", 
       List: [
-        { Name: "C#.NET", Level: 4.5, LevelDesc: "Proficient" }, 
-        { Name: "JavaScript", Level: 4, LevelDesc: "Proficient" }, 
-        { Name: "jQuery", Level: 4.5, LevelDesc: "Proficient" }, 
-        { Name: "HTML / Pug", Level: 4, LevelDesc: "Proficient" }, 
-        { Name: "CSS / Sass", Level: 4, LevelDesc: "Proficient" }, 
-        { Name: "SQL / T-SQL", Level: 3.5, LevelDesc: "Skilled" }, 
-        { Name: "Java", Level: 2.5, LevelDesc: "Skilled" }, 
-        { Name: "C", Level: 1.5, LevelDesc: "Used" }, 
+        { Name: "C#.NET", Level: 4, LevelDesc: "Advanced" }, 
+        { Name: "JavaScript", Level: 4, LevelDesc: "Advanced" }, 
+        { Name: "jQuery", Level: 4, LevelDesc: "Advanced" }, 
+        { Name: "HTML / Pug", Level: 4, LevelDesc: "Advanced" }, 
+        { Name: "CSS / Sass", Level: 4, LevelDesc: "Advanced" }, 
+        { Name: "SQL / T-SQL", Level: 3.5, LevelDesc: "Intermediate" }, 
+        { Name: "Java", Level: 3, LevelDesc: "Intermediate" }, 
+        { Name: "C", Level: 1.5, LevelDesc: "Novice" }, 
       ]
     }, 
     Techniques: {
@@ -24,7 +24,7 @@ var ResumeData = {
       Topic: "tech", 
       List: [
         { Name: "ASP.NET MVC" }, 
-        { Name: "Bootstrap" }, 
+        { Name: "Bootstrap & RWD" }, 
         { Name: "Vue.js" }, 
         { Name: "Kendo UI" }, 
         { Name: "WinForm" }, 
@@ -36,10 +36,11 @@ var ResumeData = {
       Topic: "tool", 
       List: [
         { Name: "MS SQL Server", Type: "DB" },
-        { Name: "MySQL", Type: "DB" }, 
+        { Name: "MySQL", Type: "DB" },
         { Name: "SonarQube", Type: "QA" }, 
         { Name: "SonarLint", Type: "QA" }, 
-        { Name: "Resharper", Type: "QA" }, 
+        { Name: "Checkmarx", Type: "QA" }, 
+        // { Name: "Resharper", Type: "QA" }, 
         { Name: "Jenkins", Type: "CI" }, 
         { Name: "SVN", Type: "Revision Control" }, 
         { Name: "Git", Type: "Revision Control" }, 
@@ -136,7 +137,7 @@ var ResumeData = {
         {
           IconClass: "fa fa-graduation-cap", 
           Description: "Master of Science (M.S.)",
-          Detail: "\"Development of an Approach for Automatically Classifying User's Personality Type by Mining Interactions in Facebook,\" NCKU, 2015.", 
+          Detail: "Text mining used in my research. <br> Publish: \"Development of an Approach for Automatically Classifying User's Personality Type by Mining Interactions in Facebook,\" NCKU, 2015.", 
           Organization: "Institue of Manufacturing Information & Systems, <br>National Cheng Kung University", 
           Link: "http://www.imis.ncku.edu.tw/index.php?Lang=zh-tw", 
           Location: "Taiwan", 
@@ -181,6 +182,19 @@ var ResumeData = {
       ]
     },
     {
+      Year: 2018, 
+      Events: [
+        {
+          Description: "Trainee",
+          Detail: "A training of \"Evolutionary Development - TDD and Continuous Refactoring\" established by Joey Chen @ Odd-e.", 
+          Organization: "Joey Chen @ Odd-e", 
+          Link: "https://dotblogs.com.tw/hatelove/1", 
+          Location: "Taiwan", 
+          Display: true
+        }, 
+      ]
+    },
+    {
       Year: 2019
     }, 
   ], 
@@ -193,7 +207,7 @@ var ResumeData = {
           Detail: "A website system for public users such as professors & researchers submiting academic plans while MOST internal users managing data, reviewing projects and assinging tasks.", 
           Roles: [
             "Full stack developer", 
-            "Person responsible for importing i18n", 
+            "Person responsible for introducing i18n", 
           ], 
           Features: [
             "ASP.NET MVC (C#)", 
@@ -209,15 +223,16 @@ var ResumeData = {
         {
           Description: "Official Document System [Product & Customized Project]", 
           Detail: "A website system for organizations such as the Government departments, banks, large companies etc. processing official document online.", 
+          Link: "https://www.gsscloud.com/tw/vital/od", 
           Roles: [
-            "Full stack developer of product", 
+            "Full stack developer", 
             "Main developer in project team", 
-            "Person responsible for importing CI in project team"
+            "Promoter of CI in project team"
           ], 
           Features: [
             "ASP.NET MVC (C#)", 
             "JavaScript + jQuery + Kendo UI", 
-            "Multiple Layers Framework.", 
+            "3-Tier Layers Framework.", 
             "Using kits such as Spring.Net Framework (DI), Quartz.NET (Schedule), DevExpress (Report), Elmah (Log) etc.", 
             "Customized project are based on the product. Using SVN Branch/Merge to control."
           ], 
@@ -228,7 +243,7 @@ var ResumeData = {
       Year: 2018, 
       Events: [
         {
-          Description: "Repository System [SOHO Project]",
+          Description: "Repository Management System [SOHO Project]",
           Detail: "A website system for managing inventory information. This project involves issues such as Requirement Analysis / System Analysis / System Design / Database Schema Design / Website Development / Envirenment Building / Data Backup etc.", 
           Roles: [
             "Designer",

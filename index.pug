@@ -53,7 +53,8 @@
             h5.timePoint {{project.Year}}
             ul.events
               li.event(v-for="(proj, index) in project.Events") 
-                h4.desc {{proj.Description}}
+                h4.desc 
+                  a(:href="proj.Link" target="_blank") {{proj.Description}}
                 ul.roles
                   li.role(v-for="role in proj.Roles") {{role}}
                 hr
@@ -69,5 +70,5 @@
         li LinkedIn: 
           a(:href="LinkedInUrl" target="_blank") Ohni-Tsai
     .photo
-      a.more.btn.btn-primary(href="https://www.google.com" target="_blank") More
-    .corner more
+      //- a.more.btn.btn-primary(href="https://www.google.com" target="_blank") More
+    //- .corner more
