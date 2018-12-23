@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  padding: 80px;
+  padding: 40px 80px;
   display: flex;
   justify-content: center;
   background-color: #262626;
@@ -53,6 +53,36 @@ h3.hidden {
 ul {
   padding: 0;
   list-style: none;
+}
+
+.i18n {
+  display: inline-block;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #a2a2a2;
+  transition: 0.5s;
+}
+.i18n .lang {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+.i18n .lang.active {
+  color: #eee;
+}
+.i18n .lang.active .state {
+  border: none;
+  background-color: #fa0;
+}
+.i18n .state {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .resume {
@@ -248,7 +278,7 @@ ul {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url("https://i.imgur.com/a1Nvwx7.jpg");
+  background-image: url("https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/14484797_1835096390057416_5893892770830380202_n.jpg?_nc_cat=103&_nc_ht=scontent.fkhh1-1.fna&oh=fb24c90a05f7a0ce49eac6a3226fffcc&oe=5C940612");
   background-size: cover;
   border: 5px solid #eee;
   position: absolute;
@@ -271,7 +301,7 @@ ul {
 
 @media screen and (max-width: 950px) {
   body {
-    padding: 40px;
+    padding: 0 40px;
   }
 
   h3 {
@@ -338,6 +368,12 @@ ul {
   }
 }
 @media screen and (max-width: 1150px) {
+  .i18n {
+    left: 100%;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+
   .resume .contact {
     padding: 10px 110px 10px 10px;
   }

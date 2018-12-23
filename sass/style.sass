@@ -18,7 +18,7 @@ html, body
   width: 100%
 
 body
-  padding: 80px
+  padding: 40px 80px
   display: flex
   justify-content: center
   background-color: $color_black
@@ -53,7 +53,29 @@ h3
 ul
   padding: 0
   list-style: none  
-  
+
+.i18n
+  display: inline-block
+  left: 50%
+  transform: translate(-50%)
+  color: darken($color_white, 30%)
+  transition: 0.5s
+  .lang
+    display: inline-block
+    padding: 10px
+    cursor: pointer
+    &.active
+      color: $color_white
+      .state
+        border: none
+        background-color: $color_orange
+  .state
+    +Size(10px, 10px)
+    border: 1px solid $color_white
+    border-radius: 50%
+    left: 50%
+    transform: translate(-50%)
+
 .resume
   display: flex
   // min-width: 520px
@@ -241,7 +263,7 @@ ul
 
 @media screen and (max-width: 950px)
   body
-    padding: 40px 
+    padding: 0 40px 
   h3
     margin-top: 10px
   .resume
@@ -262,7 +284,6 @@ ul
         min-width: 295px
         .name
           flex-grow: 0
-      
         
       .tech
         width: 190px
@@ -279,25 +300,22 @@ ul
             &::after
               content: "/"
           
-// @media screen and (max-width: 997px)
-//   .resume
-//     .left
-//       .tool
-//         width: initial
-// @media screen and (max-width: 789px)
-//   .resume
-//     .left
-//       .tool
-//         width: 50%
 @media screen and (max-width: 585px)
   .resume
     .left
       .skill
         margin-right: 0
+        
 @media screen and (max-width: 400px)
   .resume
     border: none
+    .contact
+      border-radius: 20px
+      
 @media screen and (max-width: 1150px)
+  .i18n
+    left: 100%
+    transform: translate(-100%)
   .resume
     .contact
       padding: 10px 110px 10px 10px

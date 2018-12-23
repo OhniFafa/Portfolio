@@ -1,74 +1,78 @@
 #app
+  ul.i18n
+    li.lang(v-for="lang in Languages" ref="lang.Code" :class="lang.Code === Locale ? 'active' : ''" @click="SwitchLanguage(lang.Code)")
+      .text {{lang.Display}}
+      .state
   .resume
     .left
-      h1.myName {{Name}}
+      h1.myName {{__(Resume.Name)}}
       .info
-        h4.title {{Title}} 
-        p.summary(v-html="Summary")
+        h4.title {{__(Resume.Title)}} 
+        p.summary(v-html="__(Resume.Summary)")
       hr
       .skills
         .skill.lang
-          h3(ref="lang" @click="HideContent('lang')") {{Skills.Languages.Title}}
+          h3(ref="lang" @click="HideContent('lang')") {{__(Resume.Skills.Languages.Title)}}
           ul
-            li.item(v-for="item in Skills.Languages.List")
+            li.item(v-for="item in Resume.Skills.Languages.List")
               .name {{item.Name}}
               .bar
                 .value(:style="{width: 100*item.Level/5 + '%'}")
-                  .desc {{item.LevelDesc}}
+                  .desc {{__(item.LevelDesc)}}
         .skill.tech
-          h3(ref="tech" @click="HideContent('tech')")  {{Skills.Techniques.Title}}
+          h3(ref="tech" @click="HideContent('tech')")  {{__(Resume.Skills.Techniques.Title)}}
           ul
-            li.item(v-for="item in Skills.Techniques.List")
+            li.item(v-for="item in Resume.Skills.Techniques.List")
               .name {{item.Name}}
         .skill.tool
-          h3(ref="tool" @click="HideContent('tool')")  {{Skills.Tools.Title}}
+          h3(ref="tool" @click="HideContent('tool')")  {{__(Resume.Skills.Tools.Title)}}
           ul.toolTypes
             li(v-for="type in ToolTypes") 
-              .toolType.badge.badge-pill {{type}}
+              .toolType.badge.badge-pill {{__(type)}}
               ul.items
-                li.item(v-for="item in Skills.Tools.List" v-if="item.Type === type") {{item.Name}}              
+                li.item(v-for="item in Resume.Skills.Tools.List" v-if="item.Type === type") {{item.Name}}              
                 
     .right
       .experiences
-        h3(ref="exp" @click="HideContent('exp')")  Experiences
+        h3(ref="exp" @click="HideContent('exp')") {{__("FocalExperiences")}}
         ul.timePoints
-          li(v-for="exp in Experiences")
+          li(v-for="exp in Resume.Experiences")
             h5.timePoint {{exp.Year}}
             ul.events
               li.event(v-for="(event, index) in exp.Events") 
                 .display(v-if="event.Display")
                   h4.desc 
                     i(:class="event.IconClass" v-if="event.IconClass")
-                    |{{event.Description}}
+                    |{{__(event.Description)}}
                   hr
-                  p.detail(v-if="event.Detail" v-html="event.Detail")
-                  a.organization(:href="event.Link" target="_blank" v-html="event.Organization")
-                  .location @ {{event.Location}}
+                  p.detail(v-if="event.Detail" v-html="__(event.Detail)")
+                  a.organization(:href="event.Link" target="_blank" v-html="__(event.Organization)")
+                  .location @ {{__(event.Location)}}
                   .hideBtn(@click="HideEvent(exp.Events[index])")
                 .collapsed(v-if="!event.Display" @click="ShowEvent(exp.Events[index])")
       .projects
-        h3(ref="proj" @click="HideContent('proj')")  Projects
+        h3(ref="proj" @click="HideContent('proj')") {{__("FocalProjects")}}
         ul.timePoints
-          li(v-for="project in Projects")
+          li(v-for="project in Resume.Projects")
             h5.timePoint {{project.Year}}
             ul.events
               li.event(v-for="(proj, index) in project.Events") 
                 h4.desc 
-                  a(:href="proj.Link" target="_blank") {{proj.Description}}
+                  a(:href="proj.Link" target="_blank") {{__(proj.Description)}}
                 ul.roles
-                  li.role(v-for="role in proj.Roles") {{role}}
+                  li.role(v-for="role in proj.Roles") {{__(role)}}
                 hr
-                p.detail(v-if="proj.Detail" v-html="proj.Detail")
+                p.detail(v-if="proj.Detail" v-html="__(proj.Detail)")
                 ul.features
-                  li.feature(v-for="feature in proj.Features") {{feature}}
-                a.organization(:href="proj.Link" target="_blank" v-html="proj.Organization")
+                  li.feature(v-for="feature in proj.Features") {{__(feature)}}
+                a.organization(:href="proj.Link" target="_blank" v-html="__(proj.Organization)")
                 
     .contact
       ul
-        li
-          a(:href="'mailto:'+Email" target="_blank") {{Email}}
         li LinkedIn: 
-          a(:href="LinkedInUrl" target="_blank") Ohni-Tsai
+          a(:href="Resume.LinkedInUrl" target="_blank") Ohni-Tsai
+        li
+          a(:href="'mailto:'+Resume.Email" target="_blank") {{Resume.Email}}
     .photo
       //- a.more.btn.btn-primary(href="https://www.google.com" target="_blank") More
     //- .corner more
