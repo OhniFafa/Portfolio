@@ -70,6 +70,7 @@ ul {
 }
 .i18n .lang.active {
   color: #eee;
+  font-weight: bold;
 }
 .i18n .lang.active .state {
   border: none;
