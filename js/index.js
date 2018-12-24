@@ -13,8 +13,8 @@ const RESOURCES = {
 			Mentor: "Mentor of 5 Freshmen",
 			Projects: "Projects",
 			FullStackDeveloper: "Full stack developer",
-      TwoTierSoftwareFrameWork: "2-tier software framework.", 
-			ThreeTierSoftwareFrameWork: "3-tier software framework.",
+			TwoTierSoftwareFrameWork: "2-tier software framework",
+			ThreeTierSoftwareFrameWork: "3-tier software framework",
 		},
 		Message: {
 			Name: "Leon Tsai",
@@ -41,7 +41,7 @@ const RESOURCES = {
 			MentorDetail: "Mentored 5 freshmen altogether.",
 			MOSTKits: "Using kits such as NPOI, NLog etc.",
 			TraineeOfTddAndRefactoringTraining: "Trainee of \"TDD and Continuous Refactoring\"",
-			TddAndRefactoringTraining: "A training of \"Evolutionary Development - TDD and Continuous Refactoring\" established by Joey Chen @ Odd-e.",
+			TddAndRefactoringTraining: "Attended a training of \"Evolutionary Development - TDD and Continuous Refactoring\" established by Joey Chen @ Odd-e to improve development knowledge and skill.",
 			MOSTProject: "Taiwan Ministry of Science and Technology (MOST) External & Internal System [Customized Project]",
 			MOSTProjectDetail: "A website system for public users such as professors & researchers submiting academic plans while MOST internal users managing data, reviewing projects and assinging tasks.",
 			I18nIntroducer: "The person responsible for introducing i18n",
@@ -87,8 +87,8 @@ const RESOURCES = {
 			Mentor: "新人輔導員",
 			Projects: "重點專案",
 			FullStackDeveloper: "全端開發工程師",
-      TwoTierSoftwareFrameWork: "兩層式軟體架構", 
-			ThreeTierSoftwareFrameWork: "三層式軟體架構。",
+			TwoTierSoftwareFrameWork: "兩層式軟體架構",
+			ThreeTierSoftwareFrameWork: "三層式軟體架構",
 		},
 		Message: {
 			Name: "蔡孟哲",
@@ -116,17 +116,17 @@ const RESOURCES = {
 			TraineeOfTddAndRefactoringTraining: "「測試驅動開發與持續重構」課程學員",
 			TddAndRefactoringTraining: "自費參加 Joey Chen (91) 開設之「測試驅動開發與持續重構」課程，精進軟體開發實力。",
 			MOSTProject: "台灣科技部內部與外部系統 [客製化專案]",
-			MOSTProjectDetail: "供外部使用者進行學術申請、內部使用者進行資料管理、審查及分派等完整功能。兩層式軟體架構，主要是依照客戶需求開發對資料庫視覺化 CRUD 的功能，系統本身並無太多 Domain Knowledge 或演算法。<br>此案是首次將所學的 ASP.NET MVC 知識投入業界專案開發，從模仿前人寫基本的查詢功能開始，經歷介接 API、系統移植、維護等功能開發外的任務，後期負責新的子系統打底及開發，最後在離開專案前，因通熟專案架構而擔任導入 i18n 機制的負責人。支援此系列一共六個專案。",
+			MOSTProjectDetail: "供外部使用者進行學術申請、內部使用者進行資料管理、審查及分派、報表產製等完整功能，主要是依照客戶需求開發對資料庫進行視覺化的 CRUD，系統本身並無太多 Domain Knowledge 或演算法。<br>此案是首次將所學的 ASP.NET MVC 知識投入業界專案開發，從模仿前人寫基本的查詢功能開始，經歷介接 API、系統移植、維護等功能開發外的任務，後期負責新的子系統打底及開發，最後在離開專案前，因通熟專案架構而擔任導入 i18n 機制的負責人。支援此系列一共六個專案。",
 			MOSTKits: "使用第三方套件如：NPOI 進行 MS Office 檔案產製、NLog 進行網站錯誤紀錄等。",
 			I18nIntroducer: "導入多國語系機制負責人",
 			ODSystem: "叡揚資訊公文系統 [自有產品與衍生客製化專案]",
-			ODSystemDetail: "供客戶機關進行製作、遞送、管理、簽核等全方位公文處理功能之公文流程電子化系統，以產品版本為基底，為不同客戶製作客製化的專案。<br>挾前案的經驗，受主管調度支援此案，從一開始短期支援人員變成後來的客製專案主力開發人員。此案規模較前案大許多，軟體架構分層更細膩，功能需求也更多元，與 PM/SA 及開發夥伴的協作更顯重要。因對資料庫/後端/前端掌握程度較全面，在客製專案小組中經常扮演問題追溯者、問題解決者以及知識分享者的角色，數次與專案架構師溝通需求並獲授權於底層除錯或增加設計。在此案中強化了前案所累積的知識，並切身經歷大型軟體的協作過程。支援原始產品以及共三個客製專案開發。",
-			ODSystemKits: "使用多項第三方套件實現多元的系統功能，如：透過 Spring.Net Framework 實現 IoC, 使用 Quartz.NET 執行排程作業, 使用 DevExpress 產製報表, 使用 Elmah 進行網站錯誤紀錄等。",
+			ODSystemDetail: "供機關進行製作、遞送、管理、簽核等全方位公文處理功能之公文流程電子化系統，以產品版本為基底，衍生對應不同客戶的客製化專案。<br>挾前案的經驗，受主管調度支援此案，從一開始短期支援人員變成後來的客製專案主力開發人員。此案規模較前案大許多，軟體架構分層更細膩，功能需求也更多元，與 PM/SA 及開發夥伴的協作更顯重要。因對資料庫/後端/前端掌握程度較全面，在客製專案小組中經常扮演問題追溯者、問題解決者以及知識分享者的角色，數次與專案架構師溝通需求並獲授權於底層除錯或增加設計。在此案中強化了前案所累積的知識，並切身經歷大型軟體的協作過程。支援原始產品以及共三個客製專案開發。",
+			ODSystemKits: "使用多項第三方套件實現多元的系統功能，如：透過 Spring.Net Framework 實現 IoC，使用 Quartz.NET 執行排程作業，使用 DevExpress 產製報表，使用 Elmah 進行網站錯誤紀錄等。",
 			DeveloperInProductTeam: "產品前/後端功能開發人員",
 			DeveloperInProjectTeam: "客製專案全端開發人員",
 			CIPromoterInProjectTeam: "客製專案 CI 導入者",
 			AJRepo: "安稼股份有限公司倉儲管理系統 [SOHO 專案]",
-			AJRepoDetail: "離職後接的案子，因是一人專案，除了熟悉的程式碼撰寫，還親自處理需求訪談、資料庫設計、系統設計、環境建置、系統部署、資料備份、客服等各種系統開發環節。客戶期待以最低成本完成，因此使用 Bootstrap 搭配多項 Open Source MIT 授權資源取代 Kendo UI 付費元件。除此之外，相較過往在職的專案，略顯特別之處在於資料庫使用無自動備份功能的 Express 版本，遂以批次腳本搭配 Windows 工作排程以及 Google 雲端硬碟，自製免費的雲端自動化資料庫持續備份機制。",
+			AJRepoDetail: "從叡揚資訊離職後自行接的專案，因是一人專案，除了熟悉的程式碼撰寫，還親自處理需求訪談、資料庫設計、系統設計、環境建置、系統部署、資料備份、客服等各種系統開發環節。客戶期待以最低成本完成，因此使用 Bootstrap 搭配多項 Open Source MIT 授權資源取代 Kendo UI 付費元件。除此之外，相較過往在職的專案，略顯特別之處在於資料庫使用無自動備份功能的 Express 版本，遂以批次腳本搭配 Windows 工作排程以及 Google 雲端硬碟，自製免費的雲端自動化資料庫持續備份機制。",
 			PersonInCharge: "唯一負責人",
 			UsingOpenSourceResources: "使用多項 Open Source MIT 授權資源。",
 			AutoDBBackup: "實現免費雲端自動化資料庫持續備份機制。",
@@ -362,9 +362,9 @@ var ResumeData = {
 						"Message\\I18nIntroducer",
 					],
 					Features: [
-						"ASP.NET MVC (C#).",
-						"JavaScript + jQuery + Kendo UI.",
-            "Label\\TwoTierSoftwareFrameWork",
+						"ASP.NET MVC (C#)",
+						"JavaScript + jQuery + Kendo UI",
+						"Label\\TwoTierSoftwareFrameWork",
 						"Message\\MOSTKits"
 					],
 				}
@@ -383,8 +383,8 @@ var ResumeData = {
 						"Message\\CIPromoterInProjectTeam"
 					],
 					Features: [
-						"ASP.NET MVC (C#).",
-						"JavaScript + jQuery + Kendo UI.",
+						"ASP.NET MVC (C#)",
+						"JavaScript + jQuery + Kendo UI",
 						"Label\\ThreeTierSoftwareFrameWork",
 						"Message\\ODSystemKits",
 					],
@@ -401,8 +401,8 @@ var ResumeData = {
 						"Message\\PersonInCharge"
 					],
 					Features: [
-						"ASP.NET MVC (C#).",
-						"JavaScript + jQuery + Bootstrap.",
+						"ASP.NET MVC (C#)",
+						"JavaScript + jQuery + Bootstrap",
 						"Label\\ThreeTierSoftwareFrameWork",
 						"Message\\UsingOpenSourceResources",
 						"Message\\AutoDBBackup"
