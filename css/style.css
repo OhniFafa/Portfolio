@@ -243,17 +243,26 @@ ul {
   border-color: transparent transparent #fa0 transparent;
 }
 .resume .right .timePoints .events .collapsed {
-  display: inline-block;
+  color: #a2a2a2;
   cursor: pointer;
 }
-.resume .right .timePoints .events .collapsed::after {
-  content: "";
-  display: block;
-  border-color: #eee transparent transparent transparent;
-  border-width: 10px 5px 10px 5px;
-  border-style: solid solid solid solid;
+.resume .right .timePoints .events .collapsed .tip {
+  display: inline-block;
 }
-.resume .right .timePoints .events .collapsed:hover::after {
+.resume .right .timePoints .events .collapsed .tip::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  border-color: #a2a2a2 transparent transparent transparent;
+  border-width: 10px 5px 10px 5px;
+  border-style: solid;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+.resume .right .timePoints .events .collapsed:hover {
+  color: #fa0;
+}
+.resume .right .timePoints .events .collapsed:hover .tip::before {
   border-color: #fa0 transparent transparent transparent;
 }
 .resume .contact {

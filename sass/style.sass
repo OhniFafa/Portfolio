@@ -1,4 +1,5 @@
 $color_white: #eee
+$color_grey: darken($color_white, 30%)
 $color_black: darken(#333, 5%)
 $color_red: #f34
 $color_orange: #fa0
@@ -58,7 +59,7 @@ ul
   display: inline-block
   left: 50%
   transform: translate(-50%)
-  color: darken($color_white, 30%)
+  color: $color_grey
   transition: 0.5s
   .lang
     display: inline-block
@@ -169,7 +170,7 @@ ul
       .timePoint
         display: flex
         align-items: center
-        color: darken($color_white, 30%)
+        color: $color_grey
         
         // 時間點
         &::before
@@ -192,13 +193,13 @@ ul
             font-size: 20px
             color: white
           .detail
-            color: darken($color_white, 30%)
+            color: $color_grey
           .features
             margin: 0 0 1.5rem 1.5rem
             .feature
               list-style: disc
           .location
-            color: darken($color_white, 30%)
+            color: $color_grey
           .hideBtn
             display: inline-block
             position: absolute
@@ -214,16 +215,22 @@ ul
             &:hover::after
               border-color: transparent transparent $color_orange transparent
         .collapsed
-          display: inline-block
+          color: $color_grey
           cursor: pointer
-          &::after
-            content: ""
-            display: block
-            border-color: $color_white transparent transparent transparent
-            border-width: 10px 5px 10px 5px
-            border-style: solid solid solid solid
-          &:hover::after
-            border-color: $color_orange transparent transparent transparent
+          .tip
+            display: inline-block
+            &::before
+              content: ""
+              display: inline-block
+              margin-right: 10px
+              border-color: $color_grey transparent transparent transparent
+              border-width: 10px 5px 10px 5px
+              border-style: solid
+              transform: translateY(50%)
+          &:hover
+            color: $color_orange
+            .tip::before
+              border-color: $color_orange transparent transparent transparent
           
   .contact
     display: inline-block
@@ -244,7 +251,7 @@ ul
   .photo
     +Size(200px, 200px)
     border-radius: 50%
-    background-image: url("https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/14484797_1835096390057416_5893892770830380202_n.jpg?_nc_cat=103&_nc_ht=scontent.fkhh1-1.fna&oh=fb24c90a05f7a0ce49eac6a3226fffcc&oe=5C940612")
+    background-image: url("https://i.imgur.com/a1Nvwx7.jpg")
     background-size: cover
     border: 5px solid $color_white
     position: absolute
