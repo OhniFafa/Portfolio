@@ -3,6 +3,7 @@ const RESOURCES = {
 		Label: {
 			ProgrammingLanguages: "Programming Languages",
 			RevisionControl: "Revision Control",
+      President: "Director", 
 			WalkingaroundTaiwan: "Walking Around Taiwan",
 			MandatoryMilitaryService: "Mandatory Military Service",
 			OutsourcedProgrammer: "Outsourced Programmer",
@@ -420,7 +421,7 @@ var Languages = [
 	{
 		Name: "English (US)",
 		Code: "EN",
-		Display: "EN"
+		Display: "En"
 	},
 	{
 		Name: "中文(台灣)",
