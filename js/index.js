@@ -421,7 +421,7 @@ var Languages = [
 	{
 		Name: "English (US)",
 		Code: "EN",
-		Display: "En"
+		Display: "EN"
 	},
 	{
 		Name: "中文(台灣)",
